@@ -1,0 +1,11 @@
+stage,arm,epochs,flags,essential,est_min
+E1,E1,30,-,True,52.0
+E2,E2,30,-,True,55.4
+A0_reference,E1,12,-,True,20.8
+A1_no_KD,E1,12,"{'use_kd': False, 'use_segkd': False}",True,20.8
+A2_no_consistency,E1,12,{'use_cons': False},True,20.3
+A3_no_attention_supervision,E1,12,{'use_att_sup': False},False,20.8
+A4_input_adapter,E1,12,{'use_adapter': True},False,20.8
+A5_focal_loss,E1,12,{'focal': True},False,20.8
+extra seeds of the selected arm (x2),sel,30,"seed 43, 44",False,110.7
+"selection, calibration, final evaluation, XAI, export, bundle",-,0,-,True,33.0

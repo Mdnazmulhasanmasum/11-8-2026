@@ -1,0 +1,23 @@
+{
+  "params_trainable": 496503,
+  "params_total": 496503,
+  "limit": 500000,
+  "weights_mb_fp32": 2.135787,
+  "gflops_per_image": 0.481959232,
+  "cpu_latency_1_thread_b1": {
+    "median_ms": 38.703731501300354,
+    "p90_ms": 40.14849030209007
+  },
+  "cpu_latency_all_threads_b1": {
+    "median_ms": 38.757513500968344,
+    "p90_ms": 39.84022310214641
+  },
+  "cpu": "x86_64",
+  "cpu_threads": 1,
+  "gpu_latency_b1": {
+    "median_ms": 7.201491498562973,
+    "p90_ms": 7.431947897202917
+  },
+  "gpu_peak_memory_mb_b1": 4066.958336,
+  "gpu": "Tesla T4"
+}

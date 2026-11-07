@@ -1,0 +1,312 @@
+{
+  "resume_files_ignored": [
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/checkpoints/attention_unet_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/checkpoints_segmentation/seg_model_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/fl_centralized_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/fl_fedavg_iid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/fl_fedavg_noniid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/fl_fedprox_noniid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs_mobile/checkpoints_v2/TinyBrainNetV2_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs_mobile/checkpoints_v3/TinyBrainNetV3_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs_mobile/checkpoints_v4/TinyBrainNetV4_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs_mobile/checkpoints_v5/TinyBrainNetV5_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs_mobile/checkpoints_v6/TinyBrainNetV6_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/brisc2025_runs/checkpoints_segmentation/seg_model_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/brisc2025_runs_mobile/checkpoints_v5/TinyBrainNetV5_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/checkpoints/attention_unet_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/checkpoints_segmentation/seg_model_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/fl_centralized_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/fl_fedavg_iid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/fl_fedavg_noniid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/fl_fedprox_noniid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/fl_fedprox_plus_noniid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs_mobile/checkpoints_v2/TinyBrainNetV2_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs_mobile/checkpoints_v3/TinyBrainNetV3_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs_mobile/checkpoints_v4/TinyBrainNetV4_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs_mobile/checkpoints_v5/TinyBrainNetV5_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs_mobile/checkpoints_v6/TinyBrainNetV6_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/checkpoints/attention_unet_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/checkpoints_segmentation/seg_model_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/fl_centralized_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/fl_fedavg_iid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/fl_fedavg_noniid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/fl_fedprox_noniid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/fl_fedprox_plus_noniid_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs_mobile/checkpoints_v2/TinyBrainNetV2_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs_mobile/checkpoints_v3/TinyBrainNetV3_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs_mobile/checkpoints_v4/TinyBrainNetV4_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs_mobile/checkpoints_v5/TinyBrainNetV5_resume.pt",
+    "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs_mobile/checkpoints_v6/TinyBrainNetV6_resume.pt"
+  ],
+  "other_files": 389,
+  "candidates": {
+    "tinyunet_pre": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_best.pt",
+        "sha256": "3e032129a2d2b1c53b120d3bbc040f87248984a491eaeec90aff4e0db6ad6e8e",
+        "bytes": 2081079,
+        "n_keys": 318,
+        "missing": [],
+        "unexpected": [],
+        "output_shapes": {
+          "out": [
+            2,
+            1,
+            224,
+            224
+          ]
+        },
+        "params": 482209,
+        "status": "VERIFIED"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_best.pt",
+        "sha256": "3e032129a2d2b1c53b120d3bbc040f87248984a491eaeec90aff4e0db6ad6e8e",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_best.pt"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_best.pt",
+        "sha256": "3e032129a2d2b1c53b120d3bbc040f87248984a491eaeec90aff4e0db6ad6e8e",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_best.pt"
+      }
+    ],
+    "tinyunet_pre_kd": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_best.pt",
+        "sha256": "7e78b25be4b6e37ea464ea4c254ae3913ba6d702e152a45f199213396974adfd",
+        "bytes": 2084611,
+        "n_keys": 318,
+        "missing": [],
+        "unexpected": [],
+        "output_shapes": {
+          "out": [
+            2,
+            1,
+            224,
+            224
+          ]
+        },
+        "params": 482209,
+        "status": "VERIFIED"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_best.pt",
+        "sha256": "7e78b25be4b6e37ea464ea4c254ae3913ba6d702e152a45f199213396974adfd",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_best.pt"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_best.pt",
+        "sha256": "7e78b25be4b6e37ea464ea4c254ae3913ba6d702e152a45f199213396974adfd",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_best.pt"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_best.pt",
+        "sha256": "7e78b25be4b6e37ea464ea4c254ae3913ba6d702e152a45f199213396974adfd",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_best.pt"
+      }
+    ],
+    "tinyunet_scratch": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_best.pt",
+        "sha256": "a160c6b5cb322d6e2ceca0a66a2f979ca3c6f54d75f77c6edcfe630efee1f771",
+        "bytes": 2084935,
+        "n_keys": 318,
+        "missing": [],
+        "unexpected": [],
+        "output_shapes": {
+          "out": [
+            2,
+            1,
+            224,
+            224
+          ]
+        },
+        "params": 482209,
+        "status": "VERIFIED"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_best.pt",
+        "sha256": "a160c6b5cb322d6e2ceca0a66a2f979ca3c6f54d75f77c6edcfe630efee1f771",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_best.pt"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_best.pt",
+        "sha256": "a160c6b5cb322d6e2ceca0a66a2f979ca3c6f54d75f77c6edcfe630efee1f771",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_best.pt"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_best.pt",
+        "sha256": "a160c6b5cb322d6e2ceca0a66a2f979ca3c6f54d75f77c6edcfe630efee1f771",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_scratch_best.pt"
+      }
+    ],
+    "v6": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs_mobile/checkpoints/TinyBrainNet_v6arch_v2_best.pt",
+        "sha256": "6de820d3fbf2a8702e6beaedeac70340face4e0981c1df1d3641dd5b10c0ec46",
+        "bytes": 2889159,
+        "n_keys": 228,
+        "missing": [],
+        "unexpected": [],
+        "output_shapes": {
+          "out": [
+            2,
+            4
+          ]
+        },
+        "params": 470784,
+        "status": "VERIFIED"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs_mobile/checkpoints/TinyBrainNet_v6arch_v2_best.pt",
+        "sha256": "6de820d3fbf2a8702e6beaedeac70340face4e0981c1df1d3641dd5b10c0ec46",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs_mobile/checkpoints/TinyBrainNet_v6arch_v2_best.pt"
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs_mobile/checkpoints/TinyBrainNet_v6arch_v2_best.pt",
+        "sha256": "6de820d3fbf2a8702e6beaedeac70340face4e0981c1df1d3641dd5b10c0ec46",
+        "status": "DUPLICATE of /kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs_mobile/checkpoints/TinyBrainNet_v6arch_v2_best.pt"
+      }
+    ]
+  },
+  "distinct_versions": {
+    "tinyunet_pre": 1,
+    "tinyunet_pre_kd": 1,
+    "tinyunet_scratch": 1,
+    "v6": 1
+  },
+  "history_evidence": {
+    "tinyunet_v6_pre": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/results/tinyunet_v6_pre_history.csv",
+        "best_val_dice": 0.8350359270128153,
+        "epochs": 59
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/brisc2025_runs/defense/results/tinyunet_v6_pre_history.csv",
+        "best_val_dice": 0.8350359270128153,
+        "epochs": 59
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/results/tinyunet_v6_pre_history.csv",
+        "best_val_dice": 0.8350359270128153,
+        "epochs": 59
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/results/tinyunet_v6_pre_history.csv",
+        "best_val_dice": 0.8350359270128153,
+        "epochs": 59
+      }
+    ],
+    "tinyunet_v6_pre_kd": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/results/tinyunet_v6_pre_kd_history.csv",
+        "best_val_dice": 0.8344177488553322,
+        "epochs": 51
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/results/tinyunet_v6_pre_kd_history.csv",
+        "best_val_dice": 0.8344177488553322,
+        "epochs": 51
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/results/tinyunet_v6_pre_kd_history.csv",
+        "best_val_dice": 0.8344177488553322,
+        "epochs": 51
+      }
+    ],
+    "tinyunet_v6_scratch": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/results/tinyunet_v6_scratch_history.csv",
+        "best_val_dice": 0.8174954333547818,
+        "epochs": 59
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/defense/results/tinyunet_v6_scratch_history.csv",
+        "best_val_dice": 0.8174954333547818,
+        "epochs": 59
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/defense/results/tinyunet_v6_scratch_history.csv",
+        "best_val_dice": 0.8174954333547818,
+        "epochs": 59
+      }
+    ],
+    "finetune_v2": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/figures/finetune_v2_history.csv",
+        "best_val_dice": 0.8538554552439097,
+        "epochs": 7
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/brisc2025_runs/figures/finetune_v2_history.csv",
+        "best_val_dice": 0.8538554552439097,
+        "epochs": 7
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/figures/finetune_v2_history.csv",
+        "best_val_dice": 0.8538554552439097,
+        "epochs": 7
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/figures/finetune_v2_history.csv",
+        "best_val_dice": 0.8538554552439097,
+        "epochs": 7
+      }
+    ],
+    "refine_net": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/figures/refine_net_history.csv",
+        "best_val_dice": 0.8558770168471981,
+        "epochs": 9
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/figures/refine_net_history.csv",
+        "best_val_dice": 0.8558770168471981,
+        "epochs": 9
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/figures/refine_net_history.csv",
+        "best_val_dice": 0.8558770168471981,
+        "epochs": 9
+      }
+    ],
+    "segmentation_train": [
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/figures/segmentation_train_history.csv",
+        "best_val_dice": 0.8562314478126732,
+        "epochs": 52
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-models-backup/brisc2025_runs/figures/segmentation_train_history.csv",
+        "best_val_dice": 0.8562314478126732,
+        "epochs": 52
+      },
+      {
+        "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defense-work-backup/brisc2025_runs/figures/segmentation_train_history.csv",
+        "best_val_dice": 0.8562314478126732,
+        "epochs": 52
+      }
+    ]
+  },
+  "plan": "B",
+  "cls_teachers": [
+    "v6"
+  ],
+  "part15_status": "UNAVAILABLE",
+  "part16_status": "UNAVAILABLE",
+  "historical_norm": {
+    "mean": 0.17093240929182899,
+    "std": 0.18335067388089463,
+    "source": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_cache/norm_stats.json"
+  }
+}

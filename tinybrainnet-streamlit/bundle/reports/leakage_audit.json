@@ -1,0 +1,160 @@
+{
+  "cleaning": {
+    "nick_dropped_as_BRISC_duplicates": 4808,
+    "br35h_dropped_as_BRISC_duplicates": 70,
+    "nick_train_dropped_near_eval": 560,
+    "br35h_train_dropped_near_eval": 0,
+    "nick_val_dropped_near_test": 71,
+    "br35h_val_dropped_near_test": 0,
+    "figshare_patients_inside_brisc": 207,
+    "figshare_patients_tier4": 26
+  },
+  "pairs": {
+    "E1_train vs E1_val": {
+      "n_a": 4115,
+      "n_b": 885,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 11
+    },
+    "E1_train vs T1_brisc_historical": {
+      "n_a": 4115,
+      "n_b": 1000,
+      "near_duplicates": 88,
+      "exact_md5": 6,
+      "patient_overlap": 81,
+      "group_overlap": 155,
+      "min_hamming": 0
+    },
+    "E1_train vs T2_brisc_clean": {
+      "n_a": 4115,
+      "n_b": 767,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 14
+    },
+    "E1_train vs T3_nick_strict": {
+      "n_a": 4115,
+      "n_b": 642,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 11
+    },
+    "E1_train vs T4_figshare26": {
+      "n_a": 4115,
+      "n_b": 221,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 14
+    },
+    "E1_train vs T5_br35h": {
+      "n_a": 4115,
+      "n_b": 2930,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 11
+    },
+    "E1_train vs T6_tcga_lgg": {
+      "n_a": 4115,
+      "n_b": 3929,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 25
+    },
+    "E2_train vs E2_val": {
+      "n_a": 4605,
+      "n_b": 931,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 11
+    },
+    "E2_train vs T1_brisc_historical": {
+      "n_a": 4605,
+      "n_b": 1000,
+      "near_duplicates": 88,
+      "exact_md5": 6,
+      "patient_overlap": 81,
+      "group_overlap": 155,
+      "min_hamming": 0
+    },
+    "E2_train vs T2_brisc_clean": {
+      "n_a": 4605,
+      "n_b": 767,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 14
+    },
+    "E2_train vs T3_nick_strict": {
+      "n_a": 4605,
+      "n_b": 642,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 11
+    },
+    "E2_train vs T4_figshare26": {
+      "n_a": 4605,
+      "n_b": 221,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 14
+    },
+    "E2_train vs T5_br35h": {
+      "n_a": 4605,
+      "n_b": 2930,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 11
+    },
+    "E2_train vs T6_tcga_lgg": {
+      "n_a": 4605,
+      "n_b": 3929,
+      "near_duplicates": 0,
+      "exact_md5": 0,
+      "patient_overlap": 0,
+      "group_overlap": 0,
+      "min_hamming": 23
+    }
+  },
+  "historical_tier_leakage": {
+    "E1": {
+      "n_a": 4115,
+      "n_b": 1000,
+      "near_duplicates": 88,
+      "exact_md5": 6,
+      "patient_overlap": 81,
+      "group_overlap": 155,
+      "min_hamming": 0
+    },
+    "E2": {
+      "n_a": 4605,
+      "n_b": 1000,
+      "near_duplicates": 88,
+      "exact_md5": 6,
+      "patient_overlap": 81,
+      "group_overlap": 155,
+      "min_hamming": 0
+    }
+  }
+}

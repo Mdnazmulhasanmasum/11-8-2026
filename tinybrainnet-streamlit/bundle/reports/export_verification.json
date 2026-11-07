@@ -1,0 +1,54 @@
+{
+  "onnx": {
+    "parity": {
+      "1": {
+        "cls_logits": 2.0563602447509766e-06,
+        "seg_logits": 0.00019550323486328125,
+        "cam": 2.8312206268310547e-06,
+        "cls_argmax_agreement": 1.0
+      },
+      "3": {
+        "cls_logits": 8.344650268554688e-06,
+        "seg_logits": 0.0007104873657226562,
+        "cam": 2.5033950805664062e-06,
+        "cls_argmax_agreement": 1.0
+      },
+      "8": {
+        "cls_logits": 2.6702880859375e-05,
+        "seg_logits": 0.0014824867248535156,
+        "cam": 5.662441253662109e-06,
+        "cls_argmax_agreement": 1.0
+      }
+    },
+    "passed": true,
+    "size_mb": 2.010497,
+    "opset": 17,
+    "ort_cpu_1_thread_b1_median_ms": 16.462599000078626,
+    "onnxruntime": "1.31.1",
+    "sha256": "898b4e331af2e3623b9486f9b64318c56210353450a311e917f2a850b7c43db4"
+  },
+  "torchscript": {
+    "parity": {
+      "1": {
+        "cls_logits": 0.0,
+        "seg_logits": 0.0,
+        "cam": 0.0,
+        "cls_argmax_agreement": 1.0
+      },
+      "3": {
+        "cls_logits": 0.0,
+        "seg_logits": 0.0,
+        "cam": 0.0,
+        "cls_argmax_agreement": 1.0
+      },
+      "8": {
+        "cls_logits": 0.0,
+        "seg_logits": 0.0,
+        "cam": 0.0,
+        "cls_argmax_agreement": 1.0
+      }
+    },
+    "passed": true,
+    "sha256": "b73c6df0f5b0bc2327fb70b9b5acbfac310db7fa0aa21f7a07077e550e2b2d5f"
+  }
+}

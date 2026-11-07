@@ -1,0 +1,40 @@
+{
+  "n": 120,
+  "random_map_expectation": 0.017635091145833334,
+  "attention_cam": {
+    "pointing_game": [
+      0.6583333333333333,
+      0.5697483143197224,
+      0.7370956163143549
+    ],
+    "energy_in_mask": 0.13883168415050023
+  },
+  "gradcampp": {
+    "pointing_game": [
+      0.025,
+      0.008538174769902228,
+      0.0709300333278661
+    ],
+    "energy_in_mask": 0.01784606700530276
+  },
+  "segmentation_prob": {
+    "pointing_game": [
+      0.9583333333333334,
+      0.9061591476629647,
+      0.9820732831198906
+    ],
+    "energy_in_mask": 0.7842813728633095
+  },
+  "gradcampp_degenerate_maps": 0,
+  "sanity_randomised_head_spearman_median": 0.045876859888126266,
+  "note": "Grad-CAM++ closed form is approximate for an attention-pooled head; the cam output is a learned map supervised by masks",
+  "layercam": {
+    "pointing_game": [
+      0.6083333333333333,
+      0.5189378169992731,
+      0.6910080302766743
+    ],
+    "energy_in_mask": 0.10460879474509663,
+    "note": "LayerCAM on head_conv, target = predicted class; computed in 21.17b on the same XU sample"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "model": "TinyBrainNetP21",
+  "headline": [
+    {
+      "claim": "Accuracy, BRISC clean test (all images)",
+      "value_text": "98.3% (95% CI 97.1-99.0%)",
+      "source": "final_evaluation.json T2"
+    },
+    {
+      "claim": "Dice, BRISC clean test tumour images",
+      "value_text": "0.796 (95% CI 0.777-0.814)",
+      "source": "final_evaluation.json T2"
+    },
+    {
+      "claim": "False tumour masks on healthy BRISC images",
+      "value_text": "0.0% (95% CI 0.0-2.7%)",
+      "source": "final_evaluation.json T2"
+    },
+    {
+      "claim": "BRISC clean test, app answers / accuracy on answered",
+      "value_text": "97.5% (95% CI 96.2-98.4%) / 98.5% (95% CI 97.4-99.2%)",
+      "source": "selective_by_tier.json"
+    },
+    {
+      "claim": "Accuracy, Nickparvar Testing (strict, 3-class)",
+      "value_text": "88.2% (95% CI 85.4-90.4%)",
+      "source": "final_evaluation.json T3"
+    },
+    {
+      "claim": "Accuracy, Figshare patients absent from BRISC",
+      "value_text": "97.7% (95% CI 94.8-99.0%)",
+      "source": "final_evaluation.json T4"
+    },
+    {
+      "claim": "Br35H (unseen source) tumour sensitivity",
+      "value_text": "69.0% (95% CI 66.5-71.3%)",
+      "source": "final_evaluation.json T5"
+    }
+  ],
+  "selective_by_tier": [
+    {
+      "test set": "T1_brisc_historical",
+      "images": 1000,
+      "answered": "95.9% (95% CI 94.5-97.0%)",
+      "accuracy, all images": "97.9% (95% CI 96.8-98.6%)",
+      "accuracy, answered": "98.2% (95% CI 97.2-98.9%)",
+      "target 95%": "met (lower 95% bound >= 0.95)"
+    },
+    {
+      "test set": "T2_brisc_clean",
+      "images": 767,
+      "answered": "97.5% (95% CI 96.2-98.4%)",
+      "accuracy, all images": "98.3% (95% CI 97.1-99.0%)",
+      "accuracy, answered": "98.5% (95% CI 97.4-99.2%)",
+      "target 95%": "met (lower 95% bound >= 0.95)"
+    },
+    {
+      "test set": "T3_nick_strict",
+      "images": 642,
+      "answered": "90.5% (95% CI 88.0-92.5%)",
+      "accuracy, all images": "88.2% (95% CI 85.4-90.4%)",
+      "accuracy, answered": "91.0% (95% CI 88.5-93.1%)",
+      "target 95%": "NOT met"
+    },
+    {
+      "test set": "T4_figshare26",
+      "images": 221,
+      "answered": "90.0% (95% CI 85.4-93.3%)",
+      "accuracy, all images": "97.7% (95% CI 94.8-99.0%)",
+      "accuracy, answered": "97.5% (95% CI 94.3-98.9%)",
+      "target 95%": "point >= 0.95, not proven"
+    },
+    {
+      "test set": "T5_br35h",
+      "images": 2930,
+      "answered": "77.4% (95% CI 75.9-78.9%)",
+      "accuracy, all images": "n/a",
+      "accuracy, answered": "n/a",
+      "target 95%": "-"
+    },
+    {
+      "test set": "T6_tcga_lgg",
+      "images": 3929,
+      "answered": "69.1% (95% CI 67.6-70.5%)",
+      "accuracy, all images": "50.8% (95% CI 48.2-53.5%)",
+      "accuracy, answered": "57.3% (95% CI 54.3-60.3%)",
+      "target 95%": "NOT met"
+    }
+  ],
+  "comparisons": [
+    {
+      "earlier model": "v6",
+      "test set": "T2_brisc_clean",
+      "Part-21": "98.3%",
+      "earlier": "98.2%",
+      "p (McNemar)": "1",
+      "verdict": "Part-21 better, not significant"
+    },
+    {
+      "earlier model": "v6",
+      "test set": "T3_nick_strict",
+      "Part-21": "88.2%",
+      "earlier": "76.2%",
+      "p (McNemar)": "1.1e-19",
+      "verdict": "Part-21 better, significant"
+    },
+    {
+      "earlier model": "v6",
+      "test set": "T4_figshare26",
+      "Part-21": "97.7%",
+      "earlier": "94.1%",
+      "p (McNemar)": "0.0386",
+      "verdict": "Part-21 better, significant"
+    }
+  ],
+  "figures": [
+    "assets/part21_risk_coverage.png",
+    "assets/part21_confusion_T2.png",
+    "assets/part21_case_gallery.png"
+  ],
+  "web_test": null,
+  "training": {
+    "plan": "B",
+    "cls_teachers": [
+      "v6"
+    ],
+    "seg_teacher": "tinyunet_pre",
+    "selected_arm": "E2",
+    "selection_rule": "E2 if S_BRISC_clean_val(E2) >= S_BRISC_clean_val(E1) - 0.01, else E1 (pre-declared)",
+    "best_epoch": 27,
+    "best_val_S": 0.9424678808116506,
+    "split_hash": "1ee26ec3d2",
+    "config_hash": "8b129213c9",
+    "seed": 42
+  },
+  "verification": {
+    "fresh_process_bundle": {
+      "n_images": 4,
+      "max_abs_logit_diff": 1.780688762664795e-06,
+      "statuses": [
+        "ok",
+        "ok",
+        "review",
+        "review"
+      ]
+    },
+    "zip_extracted_fresh_process": {
+      "n_images": 4,
+      "max_abs_logit_diff": 1.780688762664795e-06,
+      "statuses": [
+        "ok",
+        "ok",
+        "review",
+        "review"
+      ]
+    },
+    "onnx_vs_notebook_max_abs_logit_diff": 5.340576171875e-05
+  },
+  "smoke_test": false,
+  "limitations_md": "\n### Intended use\nResearch prototype for single 2D brain MRI slices (mostly T1 contrast-enhanced, BRISC-like). **Not a medical device; not for diagnosis.**\n### How to read the output\n* **Answered** - every safety check passed: the calibrated confidence is above the threshold that *proves* >= 95 % accuracy on validation\n  images, the image is similar to the training data, classification and segmentation agree, and the head was found.\n* **Referred** - one of the checks failed. This is the intended behaviour for uncertain, unusual or colour images, not a malfunction.\n* The attention map shows where the classifier pooled its evidence; it is not a diagnosis and not a segmentation.\n### Known limitations\n* One slice at a time; no 3D context, no other MRI sequences, no patient history.\n* Trained on public datasets without reliable patient IDs (near-duplicate groups were used instead); retrospective data only.\n* Accuracy on images from new hospitals, scanners or the web can be lower; that is why the app refers images it is not sure about.\n* Dice on the TCGA-LGG set is approximate (FLAIR masks).\n"
+}

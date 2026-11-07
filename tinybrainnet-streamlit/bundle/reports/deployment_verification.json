@@ -1,0 +1,61 @@
+{
+  "preprocess_identical_to_training_cache": {
+    "n": 50,
+    "max_abs_diff_u8": 0
+  },
+  "fresh_process_bundle": {
+    "n_images": 4,
+    "max_abs_logit_diff": 1.780688762664795e-06,
+    "statuses": [
+      "ok",
+      "ok",
+      "review",
+      "review"
+    ]
+  },
+  "onnx_vs_notebook_max_abs_logit_diff": 5.340576171875e-05,
+  "zip_extracted_fresh_process": {
+    "n_images": 4,
+    "max_abs_logit_diff": 1.780688762664795e-06,
+    "statuses": [
+      "ok",
+      "ok",
+      "review",
+      "review"
+    ]
+  },
+  "zip": {
+    "path": "/kaggle/working/TinyBrainNet_PART21/TinyBrainNet_PART21_Ultimate_Deployment.zip",
+    "bytes": 6047353,
+    "files": [
+      "TinyBrainNet_PART21/README.md",
+      "TinyBrainNet_PART21/best_model.onnx",
+      "TinyBrainNet_PART21/calibration.json",
+      "TinyBrainNet_PART21/config.json",
+      "TinyBrainNet_PART21/infer.py",
+      "TinyBrainNet_PART21/meta.json",
+      "TinyBrainNet_PART21/model.py",
+      "TinyBrainNet_PART21/model_card.md",
+      "TinyBrainNet_PART21/model_torchscript.pt",
+      "TinyBrainNet_PART21/ood_stats.npz",
+      "TinyBrainNet_PART21/part21_best_weights.pt",
+      "TinyBrainNet_PART21/preprocess.py",
+      "TinyBrainNet_PART21/reports/ablations.csv",
+      "TinyBrainNet_PART21/reports/baselines.json",
+      "TinyBrainNet_PART21/reports/checkpoint_inventory.json",
+      "TinyBrainNet_PART21/reports/comparison_table.csv",
+      "TinyBrainNet_PART21/reports/efficiency.json",
+      "TinyBrainNet_PART21/reports/export_verification.json",
+      "TinyBrainNet_PART21/reports/final_evaluation.json",
+      "TinyBrainNet_PART21/reports/gpu_budget_plan.csv",
+      "TinyBrainNet_PART21/reports/leakage_audit.json",
+      "TinyBrainNet_PART21/reports/parameter_report.json",
+      "TinyBrainNet_PART21/reports/part21_metrics.json",
+      "TinyBrainNet_PART21/reports/teacher_report.json",
+      "TinyBrainNet_PART21/reports/xai_metrics.json",
+      "TinyBrainNet_PART21/requirements.txt"
+    ],
+    "sha256": "b619cc3fdd4a314c139394262c6838b4ecf7f774fd495a8887d9549496527814"
+  },
+  "teacher_checkpoints_required": false
+}

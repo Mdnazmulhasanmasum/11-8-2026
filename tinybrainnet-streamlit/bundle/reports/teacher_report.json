@@ -1,0 +1,35 @@
+{
+  "plan": "B",
+  "cls_teachers": [
+    "v6"
+  ],
+  "stem_fold_max_abs_diff_cls_logits": 4.112720489501953e-06,
+  "student_init_val_acc_new_preprocessing": 0.9649717514124294,
+  "seg_teacher": "tinyunet_pre",
+  "seg_teacher_evidence": {
+    "tinyunet_pre": {
+      "history_best_val_dice": 0.8350359270128153,
+      "clean_val_dice_canonical_frame": 0.8770275829664554,
+      "n_clean_val_tumour": 712,
+      "sha256": "3e032129a2d2b1c53b120d3bbc040f87248984a491eaeec90aff4e0db6ad6e8e",
+      "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_best.pt"
+    },
+    "tinyunet_pre_kd": {
+      "history_best_val_dice": 0.8344177488553322,
+      "clean_val_dice_canonical_frame": 0.8772340565016609,
+      "n_clean_val_tumour": 712,
+      "sha256": "7e78b25be4b6e37ea464ea4c254ae3913ba6d702e152a45f199213396974adfd",
+      "path": "/kaggle/input/datasets/mdnazmulhasan07/brain-defence/Kaggle Defence/Brain/brisc2025_runs/defense/checkpoints/tinyunet_v6_pre_kd_best.pt"
+    }
+  },
+  "seg_teacher_rule_metric": "history_best_val_dice",
+  "seg_teacher_caveat": null,
+  "kd_coverage": {
+    "BRISC": 0.9953827460510328,
+    "NICK": 0.8734693877551021
+  },
+  "teacher_train_accuracy_4class": {
+    "v6": 0.9824104234527687
+  },
+  "segkd_images": 3221
+}

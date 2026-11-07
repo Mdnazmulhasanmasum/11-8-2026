@@ -1,0 +1,81 @@
+{
+  "IMAGE_SIZE": 224,
+  "NUM_CLASSES": 4,
+  "SEED": 42,
+  "PARAM_LIMIT": 500000,
+  "CLASS_KEYS": [
+    "glioma",
+    "meningioma",
+    "pituitary",
+    "no_tumor"
+  ],
+  "CLASS_NAMES": [
+    "Glioma",
+    "Meningioma",
+    "Pituitary",
+    "No_tumor"
+  ],
+  "DUP_HAMMING": 10,
+  "VAL_FRACTION_OF_TRAIN": 0.176,
+  "NICK_VAL_FRACTION": 0.1,
+  "BR35H_SPLIT": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "E2_SOURCE_SHARE": {
+    "BRISC": 0.5,
+    "NICK": 0.3,
+    "BR35H": 0.2
+  },
+  "LGG_CHANNEL": "post_contrast",
+  "CROP_TRIGGER_AREA": 0.55,
+  "CROP_UNEVEN": 0.15,
+  "CROP_MARGIN": 0.08,
+  "INTENSITY_PCTL": 99.5,
+  "NOISE_SIGMA_THR": 0.02,
+  "BATCH_SIZE": 32,
+  "EPOCHS_MAIN": 30,
+  "EPOCHS_ABLATION": 12,
+  "PATIENCE": 8,
+  "NUM_WORKERS": 4,
+  "AMP": true,
+  "GRAD_CLIP": 2.0,
+  "WEIGHT_DECAY": 0.0001,
+  "EMA_DECAY": 0.998,
+  "LR_NEW": 0.0015,
+  "LR_PRETRAINED_ENC_PLAN_A": 0.0001,
+  "LR_PRETRAINED_DEC_PLAN_A": 0.0006,
+  "LR_PRETRAINED_ENC_PLAN_B": 0.0003,
+  "WARMUP_EPOCHS": 1,
+  "KD_T": 2.0,
+  "W_KD": 0.5,
+  "W_SEG": 1.0,
+  "W_AUX": 0.4,
+  "W_ATT": 0.2,
+  "W_CONS": 0.3,
+  "W_SEGKD": 0.3,
+  "S_WEIGHTS": {
+    "macro_f1": 0.35,
+    "glioma_recall": 0.2,
+    "dice_tumour": 0.25,
+    "one_minus_fp_healthy": 0.1,
+    "one_minus_ece": 0.1
+  },
+  "FP_AREA_PX": 20,
+  "ARM_NONINFERIORITY": 0.01,
+  "BR35H_UNSEEN": true,
+  "SELECTIVE_TARGET_ACC": 0.95,
+  "SELECTIVE_CONFIDENCE": 0.95,
+  "WEB_TEST_DIRNAMES": [
+    "web_test",
+    "user_test",
+    "google_test"
+  ],
+  "N_BOOT": 2000,
+  "XAI_N": 120,
+  "FIG_DPI": 300,
+  "GPU_BUDGET_MIN": 300,
+  "BUDGET_SAFETY_MIN": 15,
+  "RUN_OPTIONAL": true
+}

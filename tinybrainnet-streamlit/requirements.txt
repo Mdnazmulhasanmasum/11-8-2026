@@ -1,0 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.11.0
+streamlit>=1.50
+numpy
+opencv-python-headless
+pillow
+pandas
+fpdf2>=2.7

@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "Part-21 default": 496503,
+    "Part-21 + InputAdapter (A4)": 496592,
+    "v6 classifier (historical)": 470784,
+    "Tiny-UNet-v6 (historical)": 482209,
+    "Part-16 UNI-NET (historical)": 496573,
+    "Part-15 MT (historical)": 500245
+  },
+  "limit": 500000,
+  "per_block_part21": {
+    "stem": 176,
+    "stage1": 756,
+    "stage2": 29688,
+    "stage3": 53404,
+    "stage4": 158700,
+    "stage5": 209736,
+    "head_conv": 17296,
+    "att": 185,
+    "fc": 740,
+    "bott": 10296,
+    "up3": 7300,
+    "up2": 4600,
+    "up1": 2896,
+    "full": 680,
+    "seg_head": 17,
+    "aux_head": 33
+  }
+}

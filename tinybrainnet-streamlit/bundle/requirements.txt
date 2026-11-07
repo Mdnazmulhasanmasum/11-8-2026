@@ -1,0 +1,5 @@
+torch>=2.11.0
+numpy
+opencv-python-headless
+pillow
+onnxruntime  # optional, for best_model.onnx
